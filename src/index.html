@@ -4,11 +4,73 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .centrar
+      {
+        position: absolute;
+        /*nos posicionamos en el centro del navegador*/
+        top:50%;
+        left:50%;
+        /*determinamos una anchura*/
+        width:400px;
+        /*indicamos que el margen izquierdo, es la mitad de la anchura*/
+        margin-left:-200px;
+        /*determinamos una altura*/
+        height:300px;
+        /*indicamos que el margen superior, es la mitad de la altura*/
+        margin-top:-150px;
+        border:3px solid pink;
+        padding:5px;
+      }
+      </style>
+
   </head>
+
   <body>
+
     <header></header>
     <main></main>
     <footer></footer>
+
+    <div class='centrar'>
+      <h2 id="alfabeto"></h2>
+
+      <div align='center'>
+        <input type="text" id="entrada" value="">
+      </div>
+      
+      <br>
+      <br>
+
+      <div  id="botones" align='center'>
+        <input type="number" style="width:40px;height:20px" id="saltos" value="">
+        <a href="">clave</a>&nbsp&nbsp&nbsp
+        <button id="btnCifrar"> Cifrar </button>
+        <button id="btnDescifrar"> Descifrar </button>
+      </div>
+      
+
+      <br><br>
+      <div id="resultado">
+        <div align='center'>
+          <input type="text" id="pantalla" value="">
+        </div>
+        <br><br>
+        <div align='center'>
+          <button id="btnVolverIntentar">Volver a intentar</button>
+        </div>
+      </div>
+      
+
+    <h2 id="clave"></h2>
+
+    </div>
+    
+    <h1>&#9730</h1>
+    <h1>&#65</h1>
+    <h1>&#90</h1>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
