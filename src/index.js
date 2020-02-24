@@ -54,7 +54,7 @@ const ingresaUsuario = () => {
 const capturarDatosA = () => {
   string = document.getElementById('entrada').value;
   offset = parseInt(document.getElementById('saltos').value, 0);
-  if (offset === '' || offset === 0 || string.length !== 0 || string.length === 0) {
+  if (offset === '' || offset === 0 || string.length === 0) {
     document.getElementById('user').value = '';
     document.getElementById('error').style.display = 'block';
     limpiarEjercicio();
@@ -66,7 +66,7 @@ const capturarDatosA = () => {
 const capturarDatosB = () => {
   string = document.getElementById('entrada').value;
   offset = parseInt(document.getElementById('saltos').value, 0);
-  if (offset === '' || offset === 0 || string.length !== 0 || string.length === 0) {
+  if (offset === '' || offset === 0 || string.length === 0) {
     document.getElementById('user').value = '';
     document.getElementById('error').style.display = 'block';
     limpiarEjercicio();
