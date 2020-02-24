@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+    <title>anónima</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,28 +12,54 @@
     <footer></footer>
     <!-- div para centrar el contenedor-->     
     <div class="caja">
+      <!-- INICIO: login-->    
+      <div class="centrado"  id="login" >
+        <br><br><br><br>    
+        <input type="" id="user" placeholder="usuario">
+        <br><br>  
+        <button id="btnIngresar"> ingresar </button>
+      </div>
       <!-- PRIMERO: contenido de la primera pantalla, el div botones muestra el input entrada para el mensaje y clave para los
       desplazamientos y los botones cifrar y descifrar-->    
-      <div  id="botones" >
-        <br>  
+      <div  id="botones" class="hide" >
         <div>
-          <input type="text" id="entrada" value="">
+          <textarea  id="entrada"></textarea>
         </div>       
-        <br>
-        <input type="number" style="width:40px;height:20px" id="saltos" value="">
-        <a>clave</a>&nbsp&nbsp&nbsp
-        <button id="btnCifrar"> Cifrar </button>
-        <button id="btnDescifrar"> Descifrar </button>
+        <input class="stclave" type="" id="saltos" placeholder=" clave de cifrado">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <button id="btnCifrar"> cifrar </button>
+        <button id="btnDescifrar"> descifrar </button>
       </div>
       <!-- SEGUNDO: el div resultado muestra el mensaje cifrado/descifrado y el boton volver a intentar-->
       <div id="resultado" class="hide">
         <div>
-          <h3 id="pantalla"></h3> 
+          <textarea id="pantalla"></textarea> 
         </div>            
         <div>
-          <button id="btnVolverIntentar">Volver a intentar</button>
+          <button id="btnVolverIntentar1">Volver a intentar</button>
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <button id="btnEnviar">Enviar</button>
         </div>
-      </div>     
+      </div>
+      <!-- TERCERA: mensaje enviado-->
+      <div id="enviado" class="hide centrado">
+        <div >
+          <!-- <div class="imagen"><img src="imagenes/logo.png"></div>--> 
+          <div ><img  class="imagen" src="imagenes/logo.png"></div>          
+        </div>            
+        <div>
+          <button id="btnVolverIntentar2">Volver a intentar</button>
+        </div>
+      </div> 
+      <!-- ERROR: cuando no ingreso un usuario valido o error en el mensaje <h3>error</h3>
+      <div id="error" class="hide centrado">
+         <img  class="imagen" src="imagenes/error.png">
+          <button id="btnVolverIntentar3">Volver a intentar</button>
+      </div> -->
+      <div class="hide centrado"  id="error" >    
+        <img  class="imagen" src="imagenes/error.png">
+        <button id="btnVolverIntentar3">Volver a intentar</button>
+      </div>
     </div>  
     <script src="index.js" type="module"></script>
   </body>

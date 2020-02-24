@@ -1,4 +1,28 @@
 
+body {
+    background-color: black;
+    color:white;
+    font-family: Courier, Verdana, Arial;
+    font-size: 24px;
+}
+
+button{
+    border: 2px solid #FFFAFA;
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+
+    width: 120px;
+    height: 30px;
+    
+    /*font-family: KoHo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 39px;
+    */
+}
+
 .caja
     {
     position: absolute;
@@ -6,17 +30,72 @@
     top:50%;
     left:50%;
     /*determinamos una anchura*/
-    width:400px;
+    width:500px;
     /*indicamos que el margen izquierdo, es la mitad de la anchura*/
     margin-left:-200px;
     /*determinamos una altura*/
-    height:100px;
+    height:250px;
     /*indicamos que el margen superior, es la mitad de la altura*/
     margin-top:-150px;
-    border:3px solid pink;
+    /*border:3px solid pink;*/
     padding:5px;
     }
 
+
+
+.centrado {
+    text-align: center;
+    height:250px;
+    /*position: absolute;*/
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 50%;
+	height: 50%;
+	margin: auto;
+    }    
+input{
+    width:110px;
+    height:20px;
+}
+.imagen {
+    height: 200px;
+    margin:20px auto;
+	display:block;
+    
+    }    
+/*
+img{
+    display:block;
+    margin:auto;
+}    
+*/
+
+#entrada, #pantalla {
+    background: transparent;
+    border:3px solid pink;
+    /* border: none;*/
+    box-sizing: border-box;
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 8px;
+    resize: none;
+    width: 100%;
+}
+:focus {
+    outline: 0;
+}
 .hide {
     display: none;
     }
+.stclave{
+    border: 2px solid #FFFAFA;
+    background: transparent;
+    color: white;
+}
+textarea{
+    background: transparent;
+    color: white;
+}
