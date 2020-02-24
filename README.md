@@ -14,7 +14,7 @@ Nota: usuario para ingresar al aplicativo: 123456.
   2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
     usuarios: recabar información de una misión secreta, cifrarla y enviarla al encargado, este último lo usa para descifrar.
   3. Luego colocarás la foto de tu primer prototipo en papel. https://drive.google.com/open?id=1Zaywoi02v7AAZ61EZwJ8EdvGOCPKhDNB
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
+  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar: Mejorar el diseño
   
   5. Imagen del prototipo final. https://drive.google.com/open?id=1cwlzslIqlvxTVT3VGHCLM55Yv7IMhbju
 
